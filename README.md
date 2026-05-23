@@ -1,6 +1,5 @@
 # Product Catalog Manager
 
-UBIT Batch 23 — Assignment 9  
 Flutter app for managing products with **Provider** state management and **crudcrud.com** REST API.
 
 ## Features
@@ -33,18 +32,6 @@ flutter pub get
 flutter run
 ```
 
-## API Configuration (`.env`)
-
-The API key is **not** hardcoded in Dart source. It lives in the project root `.env` file:
-
-| File | Purpose |
-|------|---------|
-| `.env` | Your real API ID (local only; listed in `.gitignore`) |
-| `.env.example` | Template committed to GitHub for other developers |
-
-`lib/core/constants/api_constants.dart` reads `CRUDCRUD_API_ID` from `.env` at startup via `flutter_dotenv`.
-
-If your endpoint resets (every 24 hours), visit [crudcrud.com](https://crudcrud.com), copy your new ID, and update **only** `.env`.
 
 ## Project Structure
 
@@ -70,6 +57,3 @@ lib/
 - `http` — REST API calls
 - `flutter_dotenv` — loads `.env` at runtime
 
-## Submission
-
-Push to GitHub and submit the repository link as required by your instructor.
